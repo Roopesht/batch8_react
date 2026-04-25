@@ -3,7 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import {ProductCard} from './product.jsx'
+import {ProductCard} from './product/product.jsx'
+import Timer from './timer.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -11,6 +12,7 @@ function App() {
     <>
       <section id="center">
         <div style={{ display: 'flex', gap: '5px' }}>
+          
           <ProductCard
             title="Paan Corner"
             price={19.99}
@@ -28,6 +30,9 @@ function App() {
             price={39.99}
             image="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2025-11/Slice-7-1_0.png"
           />
+          
+      Here you start
+      <Timer />
         </div>
       </section>
 
